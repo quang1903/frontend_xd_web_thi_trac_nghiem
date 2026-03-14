@@ -4,7 +4,7 @@ function Users() {
   const [users, setUsers] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:8000/api/users')
+    fetch('https://backendxdwebthitracnghiem-production.up.railway.app/api/users')
       .then(res => res.json())
       .then(data => setUsers(data))
   }, [])
